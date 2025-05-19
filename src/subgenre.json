@@ -1,0 +1,82 @@
+{
+  "Fantasy": {
+    "Fantasy": "Epic Fantasy",
+    "Romance": "Romantic Fantasy",
+    "Mystery": "Fantastical Whodunit",
+    "Thriller": "Dark Fantasy",
+    "Horror": "Gothic Fantasy",
+    "Science Fiction": "Sci-Fantasy",
+    "Adventure": "Heroic Fantasy",
+    "Literary Fiction": "Mythic Realism"
+  },
+  "Romance": {
+    "Fantasy": "Fairytale Romance",
+    "Romance": "Contemporary Romance",
+    "Mystery": "Romantic Suspense",
+    "Thriller": "Dangerous Love",
+    "Horror": "Paranormal Romance",
+    "Science Fiction": "Futuristic Romance",
+    "Adventure": "Adventure Romance",
+    "Literary Fiction": "Tragic Romance"
+  },
+  "Mystery": {
+    "Fantasy": "Magical Mystery",
+    "Romance": "Love in the Shadows",
+    "Mystery": "Cozy Mystery",
+    "Thriller": "Detective Noir",
+    "Horror": "Occult Mystery",
+    "Science Fiction": "Futuristic Whodunit",
+    "Adventure": "Investigative Quest",
+    "Literary Fiction": "Psychological Mystery"
+  },
+  "Thriller": {
+    "Fantasy": "Enchanted Conspiracy",
+    "Romance": "Love on the Run",
+    "Mystery": "Crime Chase",
+    "Thriller": "Psychological Thriller",
+    "Horror": "Survival Horror",
+    "Science Fiction": "Techno-Thriller",
+    "Adventure": "High-Stakes Pursuit",
+    "Literary Fiction": "Realist Conspiracy"
+  },
+  "Horror": {
+    "Fantasy": "Nightmare Realms",
+    "Romance": "Haunting Desire",
+    "Mystery": "Cursed Case",
+    "Thriller": "Terror Chase",
+    "Horror": "Supernatural Horror",
+    "Science Fiction": "Apocalyptic Horror",
+    "Adventure": "Horror Quest",
+    "Literary Fiction": "Existential Dread"
+  },
+  "Science Fiction": {
+    "Fantasy": "Alternate Realities",
+    "Romance": "Spacebound Love",
+    "Mystery": "Sci-Fi Noir",
+    "Thriller": "Alien Invasion",
+    "Horror": "Cosmic Horror",
+    "Science Fiction": "Time Travel",
+    "Adventure": "Space Opera",
+    "Literary Fiction": "Philosophical Sci-Fi"
+  },
+  "Adventure": {
+    "Fantasy": "Portal Adventure",
+    "Romance": "Journey of Hearts",
+    "Mystery": "Treasure Hunt",
+    "Thriller": "Jungle Escape",
+    "Horror": "Dark Expedition",
+    "Science Fiction": "Galactic Voyage",
+    "Adventure": "Swashbuckler",
+    "Literary Fiction": "Emotional Odyssey"
+  },
+  "Literary Fiction": {
+    "Fantasy": "Allegorical Fantasy",
+    "Romance": "Melancholy Love",
+    "Mystery": "Internal Whodunit",
+    "Thriller": "Existential Thriller",
+    "Horror": "Literary Terror",
+    "Science Fiction": "Humanist Sci-Fi",
+    "Adventure": "Reflective Journey",
+    "Literary Fiction": "Coming-of-Age"
+  }
+}

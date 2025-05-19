@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "question": "What kind of world draws you in the most?",
+    "options": [
+      {
+        "text": "A magical kingdom plagued by ancient secrets.",
+        "main": "Fantasy",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "Two hearts crossing paths on a wild expedition.",
+        "main": "Romance",
+        "secondary": ["Adventure"]
+      },
+      {
+        "text": "A government conspiracy with a deadly twist.",
+        "main": "Thriller",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A futuristic society grappling with emotional depth.",
+        "main": "Science Fiction",
+        "secondary": ["Literary Fiction"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which narrative feels most compelling?",
+    "options": [
+      {
+        "text": "A treasure-seeking hero navigating enchanted terrain.",
+        "main": "Adventure",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A cursed house haunted by alien whispers.",
+        "main": "Horror",
+        "secondary": ["Science Fiction"]
+      },
+      {
+        "text": "A detective unraveling a love triangle full of secrets.",
+        "main": "Mystery",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A struggling artist caught in political chaos.",
+        "main": "Literary Fiction",
+        "secondary": ["Thriller"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which story setup intrigues you most?",
+    "options": [
+      {
+        "text": "An enchanted quest filled with mythical creatures.",
+        "main": "Fantasy",
+        "secondary": ["Adventure"]
+      },
+      {
+        "text": "Two lovers drawn together across lifetimes.",
+        "main": "Romance",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "An investigator racing to prevent a digital apocalypse.",
+        "main": "Mystery",
+        "secondary": ["Science Fiction"]
+      },
+      {
+        "text": "A novelist's life mirroring their fictional murders.",
+        "main": "Literary Fiction",
+        "secondary": ["Thriller"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Who would you follow in a story?",
+    "options": [
+      {
+        "text": "An explorer lost in ancient ruins with a tragic past.",
+        "main": "Adventure",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "A royal betrayed by magic and prophecy.",
+        "main": "Thriller",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A cyborg rediscovering emotion in a cold universe.",
+        "main": "Science Fiction",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A skeptic documenting paranormal events.",
+        "main": "Horror",
+        "secondary": ["Mystery"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Pick the storyline that excites you most.",
+    "options": [
+      {
+        "text": "A journalist caught in a criminal mind's game.",
+        "main": "Mystery",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "A forbidden romance under a dying sun.",
+        "main": "Romance",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A survivor's tale in a cursed expedition.",
+        "main": "Horror",
+        "secondary": ["Adventure"]
+      },
+      {
+        "text": "A cloned child searching for identity.",
+        "main": "Science Fiction",
+        "secondary": ["Literary Fiction"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What emotional journey interests you most?",
+    "options": [
+      {
+        "text": "A chosen one torn between love and legacy.",
+        "main": "Fantasy",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A rogue explorer facing nature and self.",
+        "main": "Adventure",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "A grieving painter haunted by memory.",
+        "main": "Literary Fiction",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A hacker decoding ancient secrets.",
+        "main": "Mystery",
+        "secondary": ["Science Fiction"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Choose the plot that pulls you in.",
+    "options": [
+      {
+        "text": "A detective entangled in time itself.",
+        "main": "Thriller",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A poet lost in memories of a past love.",
+        "main": "Romance",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "A prince cursed to relive nightmares.",
+        "main": "Fantasy",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A crew stranded beyond the stars.",
+        "main": "Science Fiction",
+        "secondary": ["Adventure"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Which premise would you read first?",
+    "options": [
+      {
+        "text": "A small town hiding forbidden magic.",
+        "main": "Mystery",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "An immortal haunted by their past crimes.",
+        "main": "Horror",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "A map that leads to something greater than gold.",
+        "main": "Adventure",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A girl discovering her destiny through dreams.",
+        "main": "Literary Fiction",
+        "secondary": ["Fantasy"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What theme do you enjoy most?",
+    "options": [
+      {
+        "text": "A spy torn between passion and mission.",
+        "main": "Thriller",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A rogue AI seeking revenge on its creator.",
+        "main": "Science Fiction",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A poet deciphering coded love letters.",
+        "main": "Romance",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A dragon sealed inside a librarian's book.",
+        "main": "Fantasy",
+        "secondary": ["Literary Fiction"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Which concept would you explore?",
+    "options": [
+      {
+        "text": "A war hero with a secret curse.",
+        "main": "Adventure",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A town that forgets its past each night.",
+        "main": "Horror",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A writer who finds their characters are alive.",
+        "main": "Literary Fiction",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A pilot who wakes up on an alien moon.",
+        "main": "Science Fiction",
+        "secondary": ["Thriller"]
+      }
+    ]
+  },
+   {
+    "id": 11,
+    "question": "What setting intrigues you most?",
+    "options": [
+      {
+        "text": "A forgotten jungle hiding secrets of the soul.",
+        "main": "Adventure",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A haunted forest where shadows speak in riddles.",
+        "main": "Horror",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A novelist’s characters begin writing back.",
+        "main": "Literary Fiction",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "An astronaut wakes to find their ship derelict.",
+        "main": "Science Fiction",
+        "secondary": ["Thriller"]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Choose a protagonist you'd follow.",
+    "options": [
+      {
+        "text": "A wandering knight bound by a forgotten oath.",
+        "main": "Fantasy",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A cryptic lover with a vendetta and a violin.",
+        "main": "Romance",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "An author whose dreams predict crimes.",
+        "main": "Mystery",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A stargazer who deciphers cosmic truths.",
+        "main": "Science Fiction",
+        "secondary": ["Adventure"]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Which fate feels most intriguing?",
+    "options": [
+      {
+        "text": "Falling in love with a stranger in a mirror.",
+        "main": "Romance",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "Unraveling an identity through generations of clues.",
+        "main": "Mystery",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "Escaping a collapsing city ruled by AI.",
+        "main": "Science Fiction",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "Climbing a cursed mountain said to erase memory.",
+        "main": "Adventure",
+        "secondary": ["Horror"]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What tone do you enjoy most in a story?",
+    "options": [
+      {
+        "text": "Bittersweet romance shaped by time and fate.",
+        "main": "Romance",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "A hidden library where books rewrite themselves.",
+        "main": "Fantasy",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A deep-sea crew stalked by a mythical entity.",
+        "main": "Horror",
+        "secondary": ["Science Fiction"]
+      },
+      {
+        "text": "A forgotten relic that reshapes war strategies.",
+        "main": "Thriller",
+        "secondary": ["Adventure"]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Pick the story hook that pulls you in.",
+    "options": [
+      {
+        "text": "An interstellar criminal turned reluctant hero.",
+        "main": "Science Fiction",
+        "secondary": ["Adventure"]
+      },
+      {
+        "text": "An assassin torn between duty and desire.",
+        "main": "Thriller",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A village that disappears every full moon.",
+        "main": "Fantasy",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "A painter decoding the truth through their art.",
+        "main": "Literary Fiction",
+        "secondary": ["Mystery"]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "What kind of journey excites you?",
+    "options": [
+      {
+        "text": "A heartbroken explorer retracing a lost map.",
+        "main": "Adventure",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A royal heir faking their death to uncover betrayal.",
+        "main": "Fantasy",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "A hacker hunted for unlocking forbidden archives.",
+        "main": "Science Fiction",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A detective waking in a painting of a crime scene.",
+        "main": "Mystery",
+        "secondary": ["Horror"]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Choose a premise that feels poetic.",
+    "options": [
+      {
+        "text": "A dream architect building a city of lost love.",
+        "main": "Literary Fiction",
+        "secondary": ["Romance"]
+      },
+      {
+        "text": "A demon slayer haunted by their past victims.",
+        "main": "Horror",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "A spy whose only weapon is empathy.",
+        "main": "Thriller",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "A biologist unlocking the DNA of godhood.",
+        "main": "Science Fiction",
+        "secondary": ["Fantasy"]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "What's the conflict that hooks you?",
+    "options": [
+      {
+        "text": "A secret romance in a dystopian sanctuary.",
+        "main": "Romance",
+        "secondary": ["Science Fiction"]
+      },
+      {
+        "text": "A war general plagued by past incarnations.",
+        "main": "Fantasy",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "An archaeologist digging through their own mind.",
+        "main": "Adventure",
+        "secondary": ["Mystery"]
+      },
+      {
+        "text": "A mother raising a monster child.",
+        "main": "Horror",
+        "secondary": ["Romance"]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "How should the story begin?",
+    "options": [
+      {
+        "text": "With a murder no one remembers committing.",
+        "main": "Mystery",
+        "secondary": ["Thriller"]
+      },
+      {
+        "text": "With a fairy tale told in reverse.",
+        "main": "Fantasy",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "With an escape from a lab that doesn’t exist.",
+        "main": "Science Fiction",
+        "secondary": ["Horror"]
+      },
+      {
+        "text": "With a goodbye letter written before the first meeting.",
+        "main": "Romance",
+        "secondary": ["Adventure"]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "And how should the story end?",
+    "options": [
+      {
+        "text": "With redemption forged in a battlefield of guilt.",
+        "main": "Thriller",
+        "secondary": ["Literary Fiction"]
+      },
+      {
+        "text": "With love surviving the unraveling of reality.",
+        "main": "Romance",
+        "secondary": ["Science Fiction"]
+      },
+      {
+        "text": "With a riddle answered at the cost of everything.",
+        "main": "Mystery",
+        "secondary": ["Fantasy"]
+      },
+      {
+        "text": "With the reader realizing they were the villain.",
+        "main": "Horror",
+        "secondary": ["Adventure"]
+      }
+    ]
+  }
+]
