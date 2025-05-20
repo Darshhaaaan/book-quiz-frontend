@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom right, #6dd5ed, #2193b0); /* vibrant blue gradient */
+  background: linear-gradient(135deg, #8ef6b0, #6dd5ed, #2193b0);
   min-height: 100vh;
 }
 
@@ -13,6 +13,32 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-screen {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.home-screen button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.home-screen button:hover {
+  background-color: #3367d6;
 }
 
 .question-box h2 {
@@ -45,6 +71,11 @@ body {
   background-color: #3CE53A;
 }
 
+.question-box button.selected {
+  background-color: #4285f4;
+  color: white;
+}
+
 .result-box {
   text-align: center;
 }
@@ -56,6 +87,21 @@ body {
 .result-box p {
   font-size: 1.1rem;
   margin: 8px 0;
+}
+
+.result-box + div button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.result-box + div button:hover {
+  background-color: #2b8b46;
 }
 
 @media (max-width: 480px) {
@@ -76,5 +122,13 @@ body {
 
   .result-box p {
     font-size: 1rem;
+  }
+
+  .question-box button:hover {
+    background-color: #eceff1;
+  }
+
+  .home-screen button {
+    width: 100%;
   }
 }

@@ -3,26 +3,26 @@ import questionsData from "./questions.json";
 import Question from "./Question";
 import subgenres from "./subgenre.json";
 import Result from "./Result";
-import "./App.css";
+import "./App.css"
 
 const shuffle = (array) => [...array].sort(() => Math.random() - 0.5);
 
 const App = () => {
+  const [stage, setStage] = useState("home"); // 'home' | 'quiz' | 'result'
+  const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answered, setAnswered] = useState([]);
   const [scores, setScores] = useState({});
-  const [showResult, setShowResult] = useState(false);
   const [finalResult, setFinalResult] = useState(null);
-  const [questions] = useState(() => shuffle(questionsData));
-  const MAX_QUESTIONS = 10;
 
-  useEffect(() => {
-  if (answered.length === 10 && !finalResult) {
-    const result = computeFinalResult();
-    setFinalResult(result);
-    setShowResult(true);
-  }
-}, [answered, finalResult]);
+  const startQuiz = () => {
+    setQuestions(shuffle(questionsData));
+    setScores({});
+    setAnswered([]);
+    setCurrentIndex(0);
+    setFinalResult(null);
+    setStage("quiz");
+  };
 
   const handleAnswer = (option) => {
     const newScores = { ...scores };
@@ -36,27 +36,19 @@ const App = () => {
 
     setScores(newScores);
     setAnswered([...answered, currentIndex]);
-    loadNextQuestion(newScores);
 
-    const topThree = Object.entries(newScores)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 3);
-
-    console.log("Top 3 genres so far:");
-    topThree.forEach(([genre, score], i) => {
-      console.log(`#${i + 1}: ${genre} → ${score.toFixed(2)}`);
-    });
-  };
-
-  const loadNextQuestion = (updatedScores) => {
     const remaining = questions.filter((_, i) => !answered.includes(i) && i !== currentIndex);
-    const topGenre = getTopGenres(updatedScores)[0];
+    const topGenre = getTopGenres(newScores)[0];
 
     const next = remaining.find((q) =>
       q.options.some((opt) => opt.main === topGenre)
     );
 
-    if (next) {
+    if (answered.length + 1 === 10) {
+      const result = computeFinalResult(newScores);
+      setFinalResult(result);
+      setStage("result");
+    } else if (next) {
       setCurrentIndex(questions.indexOf(next));
     } else if (remaining.length > 0) {
       setCurrentIndex(questions.findIndex((_, i) => !answered.includes(i) && i !== currentIndex));
@@ -69,21 +61,17 @@ const App = () => {
       .map((g) => g[0]);
   };
 
-  const computeFinalResult = () => {
+  const computeFinalResult = (scores) => {
     const sortedGenres = getTopGenres(scores);
     const [main, second, third] = sortedGenres;
     let subgenre = "";
 
-    if (
-      third &&
-      scores[third] >= 1.25 &&
-      subgenres[second]?.[third]
-    ) {
+    if (third && scores[third] >= 1.25 && subgenres[second]?.[third]) {
       subgenre = subgenres[second][third];
     } else if (subgenres[second]?.[second]) {
       subgenre = subgenres[second][second];
     } else if (subgenres[main]?.[main]) {
-      subgenre = subgenres[main][main]; // fallback
+      subgenre = subgenres[main][main];
     }
 
     return {
@@ -94,14 +82,29 @@ const App = () => {
 
   return (
     <div className="App">
-      {!showResult ? (
+      {stage === "home" && (
+        <div className="home-screen">
+          <h1>📚 Book Persona Quiz</h1>
+          <p>Dive into the beautiful world of books. Get personality based book recommendations. So why wait dive right into the quiz</p>
+          <button onClick={startQuiz}>Start Quiz</button>
+        </div>
+      )}
+
+      {stage === "quiz" && (
         <Question
           data={questions[currentIndex]}
           onSelect={handleAnswer}
-          displayNumber={Math.min(answered.length + 1, MAX_QUESTIONS)}
+          displayNumber={Math.min(answered.length + 1, 10)}
         />
-      ) : (
-        finalResult && <Result result={finalResult} />
+      )}
+
+      {stage === "result" && finalResult && (
+        <div>
+          <Result result={finalResult} />
+          <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+            <button onClick={() => setStage("home")}>Try another path</button>
+          </div>
+        </div>
       )}
     </div>
   );
