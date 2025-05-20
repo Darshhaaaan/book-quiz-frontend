@@ -14,6 +14,7 @@ const App = () => {
   const [showResult, setShowResult] = useState(false);
   const [finalResult, setFinalResult] = useState(null);
   const [questions] = useState(() => shuffle(questionsData));
+  const MAX_QUESTIONS = 10;
 
   useEffect(() => {
   if (answered.length === 10 && !finalResult) {
@@ -97,7 +98,7 @@ const App = () => {
         <Question
           data={questions[currentIndex]}
           onSelect={handleAnswer}
-          displayNumber={answered.length + 1}
+          displayNumber={Math.min(answered.length + 1, MAX_QUESTIONS)}
         />
       ) : (
         finalResult && <Result result={finalResult} />
