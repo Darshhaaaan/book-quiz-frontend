@@ -10,7 +10,7 @@ const Result = ({ result }) => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/recommend", {
+        const res = await axios.get("https://book-backend-jimw.onrender.com/recommend", {
           params: { genre: mainGenre, subgenre: subGenre },
         });
 
